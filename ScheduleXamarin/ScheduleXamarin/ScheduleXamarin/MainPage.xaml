@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ScheduleXamarin"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfSchedule.XForms;assembly=Syncfusion.SfSchedule.XForms"
+             x:Class="ScheduleXamarin.MainPage">
+    <ContentPage.Behaviors>
+        <local:SchedulePageBehavior/>
+    </ContentPage.Behaviors>
+    <StackLayout Orientation="Vertical">
+        <Button x:Name="daybutton" Text="DayView"/>
+        <Button x:Name="weekbutton" Text="WeekView"/>
+        <Button x:Name="workweekbutton" Text="WorkWeekView"/>
+        <Button x:Name="monthbutton" Text="MonthView"/>
+        <Button x:Name="timelinebutton" Text="TimelineView"/>
+        <syncfusion:SfSchedule x:Name="Schedule" VerticalOptions="FillAndExpand" />
+    </StackLayout>
+
+</ContentPage>
